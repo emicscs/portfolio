@@ -1,15 +1,15 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
-import { Toaster } from "@/components/ui/toaster"
+import { ThemeProvider } from "@/components/theme-provider"
 import ActiveSectionContextProvider from "@/context/active-section-context"
+import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Emilio Cardillo-Schrader",
-  description: "Personal portfolio and blog of Emilio Cardillo-Schrader",
+  description: "Emilio Cardillo-Schrader's personal website",
   icons: {
     icon: '/emiLogo.png',
     apple: [
@@ -43,10 +43,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ActiveSectionContextProvider>
-          {children}
-        </ActiveSectionContextProvider>
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ActiveSectionContextProvider>
+            {children}
+          </ActiveSectionContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   )
