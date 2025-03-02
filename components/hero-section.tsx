@@ -21,12 +21,11 @@ export function HeroSection() {
         className="max-w-3xl mx-auto px-4"
       >
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-          Hi, I'm <span className="text-primary">John Doe</span>
+          Hi, I'm <span className="text-primary">Emilio Cardillo-Schrader</span>
         </h1>
-        <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Software Engineer</h2>
+        <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Student, Machine Learning Researcher</h2>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          I build accessible, user-friendly web applications with modern technologies. Focused on creating elegant
-          solutions to complex problems.
+          I'm a first-year student at Stevens Institute of Technology studying <span className="text-primary">Computer Science</span>. I'm also a machine learning researcher at <span className="text-primary">Brookhaven National Laboratory</span>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" onClick={scrollToProjects}>
