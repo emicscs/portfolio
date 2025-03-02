@@ -16,7 +16,7 @@ const experiences = [
       "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
   },
   {
-    title: "Software Developer",
+    title: "Freshman Representative",
     company: "Blueprint",
     period: "October 2024 - Present",
     description:
@@ -27,7 +27,7 @@ const experiences = [
     company: "Stevens Institute of Technology",
     period: "August 2025 - May 2026",
     description:
-      "Establishing a welcoming and inclusive community environment by building positive relationships with residents, addressing their concerns, and promoting a sense of belonging.",
+      "Forming a welcoming and inclusive community environment by building positive relationships with residents, addressing their concerns, and promoting a sense of belonging.",
   },
 ]
 
@@ -126,8 +126,7 @@ export function AboutSection() {
                   When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature pertaining to neural networks, game theory, and reinforcement learning. Or, I am working on 🔥 projects with my friends!
                 </p>
                 <p>
-                  Away from the monitor in my dorm room, you can find me hiking through the mountains, playing basketball at the gym, or
-                  reading philosophy in the park. I love exploring and learning new things about technology and the world.
+                  Away from my laptop, you can find me playing basketball at the gym, hiking through the mountains, or reading philosophy in the park. I love exploring and learning new things about technology and the world.
                 </p>
               </CardContent>
             </Card>

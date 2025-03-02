@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin } from "lucide-react"
+import { Mail, MapPin, Linkedin, Github } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -50,12 +50,43 @@ export function ContactSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
+                  <Linkedin className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <h4 className="font-medium">LinkedIn</h4>
+                    <a
+                      href="https://www.linkedin.com/in/emilio-cardillo-schrader/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Emilio Cardillo-Schrader
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Github className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <h4 className="font-medium">GitHub</h4>
+                    <a
+                      href="https://github.com/emicscs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      emicscs
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h4 className="font-medium">Location</h4>
                     <p className="text-sm text-muted-foreground">New York, New York</p>
                   </div>
                 </div>
+
               </CardContent>
             </Card>
           </motion.div>

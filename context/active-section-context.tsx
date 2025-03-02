@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-export type SectionName = "Home" | "About" | "Blog" | "Skills" | "Contact";
+export type SectionName = "Home" | "About" | "Blog" | "Contact" | "News";
 
 export const links = [
   {
@@ -18,8 +18,8 @@ export const links = [
     hash: "#blog",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "News",
+    hash: "#news",
   },
   {
     name: "Contact",

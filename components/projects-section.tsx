@@ -16,19 +16,19 @@ const projects = [
     technologies: ["Python", "TensorFlow", "OpenCV", "MediaPipe"],
     liveUrl: "#",
     githubUrl: "https://github.com/joshheng12/Upright",
-    role: "Lead Developer, Algorithm Engineer",
+    role: "Lead Developer",
     contribution:
-      "Designed and implemented the backend architecture, trained machine learning models, and derived posture classification algorithms.",
+      "Designed and implemented backend architecture, trained proprietary convolutional neural networks, and derived posture classification algorithms.",
   },
   {
     title: "Near-Earth Object Surveillance",
     description:
       "Developed a machine learning model to detect and classify near-earth objects using data from the NASA API.",
-    technologies: ["Python", "Pandas", "NumPy", "TensorFlow", "Scikit-learn", "Keras"],
+    technologies: ["Python", "Pandas", "NumPy", "TensorFlow", "Matplotlib", "Colab"],
     liveUrl: "#",
     githubUrl: "#",
-    role: "Full Stack Developer",
-    contribution: "Built the backend API, implemented real-time functionality, and created the responsive UI.",
+    role: "Algorithm Engineer",
+    contribution: "Designed object detection and classification algorithms, cleaned and preprocessed data, and visualized results.",
   }
 ]
 

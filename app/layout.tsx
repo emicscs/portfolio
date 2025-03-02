@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Emilio Cardillo-Schrader",
   description: "Emilio Cardillo-Schrader's personal website",
   icons: {
-    icon: '/emiLogo.webp',
+    icon: '/emiLogo.ico',
     apple: [
       { url: '/emiLogo.webp' },
       { url: '/emiLogo.webp', sizes: '180x180', type: 'image/webp' },

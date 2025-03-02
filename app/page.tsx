@@ -1,11 +1,11 @@
 import { HeroSection } from "@/components/hero-section"
-import { SkillsSection } from "@/components/skills-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
 import BlogSection from "@/components/blog-section"
+import { NewsSection } from "@/components/news-section"
 import Image from "next/image"
 
 export default function Home() {
@@ -36,11 +36,11 @@ export default function Home() {
               <a href="#blog" className="transition-colors hover:text-primary">
                 Blog
               </a>
+              <a href="#news" className="transition-colors hover:text-primary">
+                News
+              </a>
               <a href="#projects" className="transition-colors hover:text-primary">
                 Projects
-              </a>
-              <a href="#skills" className="transition-colors hover:text-primary">
-                Skills
               </a>
               <a href="#contact" className="transition-colors hover:text-primary">
                 Contact
@@ -55,8 +55,8 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <BlogSection />
+          <NewsSection />
           <ProjectsSection />
-          <SkillsSection />
           <ContactSection />
         </main>
         <footer className="border-t py-6 md:py-0">
