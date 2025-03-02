@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Calendar, GraduationCap, Briefcase } from "lucide-react"
+import { Calendar, GraduationCap, Briefcase, MapPin } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -78,14 +78,14 @@ export function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader  </h3>
               <p className="text-muted-foreground">
-              I am a passionate computer science student applying machine learning and software development to impactful research and engineering projects.    
+              ..a passionate computer science student applying machine learning and software development to research and engineering.    
 
 
               </p>
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Born: September 7, 2006</span>
+                  <MapPin className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm text-muted-foreground">New York, NY</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <GraduationCap className="h-4 w-4 text-muted-foreground" />
@@ -108,24 +108,19 @@ export function AboutSection() {
           >
             <Card>
               <CardHeader>
-                <CardTitle>Who I am</CardTitle>
+                <CardTitle>Who I am..</CardTitle>
                 <CardDescription>A brief overview of my journey</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p>
-                  I'm a machine learning and software developer with a strong focus on creating intuitive and accessible web
-                  applications. My journey in technology began over a decade ago when I built my first website, and I've
-                  been hooked ever since.
+                  My journey began a few months ago when I took my first CS class at Stevens, and my passion for technology has only grown since then.
                 </p>
                 <p>
-                  Throughout my career, I've had the opportunity to work with a diverse range of clients and
-                  technologies, from startups to enterprise organizations. I specialize in modern JavaScript frameworks
-                  like React and Next.js, and I'm constantly exploring new technologies to expand my skill set.
+                  When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature pertaining to neural networks, game theory, and reinforcement learning. Or, I am working on 🔥 projects with my friends!
                 </p>
                 <p>
-                  When I'm not coding, you can find me hiking in the mountains, reading science fiction, or
-                  experimenting with new recipes in the kitchen. I believe in continuous learning and giving back to the
-                  community through mentorship and open-source contributions.
+                  Away from the monitor in my dorm room, you can find me hiking through the mountains, playing basketball at the gym, or
+                  reading philosophy in the park. I love exploring and learning new things about technology and the world.
                 </p>
               </CardContent>
             </Card>

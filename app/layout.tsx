@@ -8,8 +8,31 @@ import ActiveSectionContextProvider from "@/context/active-section-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Emilio Cardillo-Schrader - ML Researcher",
-  description: "My personal portfolio website showcasing my skills and projects",
+  title: "Emilio Cardillo-Schrader",
+  description: "Personal portfolio and blog of Emilio Cardillo-Schrader",
+  icons: {
+    icon: '/emiLogo.png',
+    apple: [
+      { url: '/emiLogo.png' },
+      { url: '/emiLogo.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  openGraph: {
+    title: 'Emilio Cardillo-Schrader',
+    description: 'Personal portfolio and blog of Emilio Cardillo-Schrader',
+    url: 'https://emiliocardilloschrader.com',
+    siteName: 'Emilio Cardillo-Schrader',
+    images: [
+      {
+        url: '/emiLogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Emilio Cardillo-Schrader - Portfolio and Blog',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({

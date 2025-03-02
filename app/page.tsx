@@ -14,7 +14,9 @@ export default function Home() {
         <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container flex h-16 items-center justify-between">
             <div className="font-bold text-xl">
-              <span className="text-primary"></span>
+              <a href="#home" className="transition-colors hover:text-primary">
+                <img src="/emiLogo.png" alt="ECS Logo" className="h-14" />
+              </a>
             </div>
             <nav className="hidden md:flex items-center gap-6 text-sm">
               <a href="#home" className="transition-colors hover:text-primary">
