@@ -10,50 +10,29 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Real-Time Posture Analysis Tool",
     description:
-      "A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment processing.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB"],
+      "Trained machine learning models in Python with TensorFlow to accurately identify and classify posture, enabling the system to provide immediate visual and auditory feedback on deviations from optimal alignment.",
+    image: "/IMG_5615.jpg",
+    technologies: ["Python", "TensorFlow", "OpenCV", "MediaPipe"],
     liveUrl: "#",
-    githubUrl: "#",
-    role: "Lead Developer",
+    githubUrl: "https://github.com/joshheng12/Upright",
+    role: "Lead Developer, Algorithm Engineer",
     contribution:
-      "Designed and implemented the frontend architecture, integrated payment processing, and optimized performance.",
+      "Designed and implemented the backend architecture, trained machine learning models, and derived posture classification algorithms.",
   },
   {
-    title: "Task Management App",
+    title: "Near-Earth Object Surveillance",
     description:
-      "A collaborative task management application with real-time updates, task assignment, and progress tracking.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Docker"],
+      "Developed a machine learning model to detect and classify near-earth objects using data from the NASA API.",
+    image: "/astronaut-in-space.jpg",
+    technologies: ["Python", "Pandas", "NumPy", "TensorFlow", "Scikit-learn", "Keras"],
     liveUrl: "#",
     githubUrl: "#",
     role: "Full Stack Developer",
     contribution: "Built the backend API, implemented real-time functionality, and created the responsive UI.",
-  },
-  {
-    title: "Health & Fitness Tracker",
-    description:
-      "A mobile-first application for tracking workouts, nutrition, and health metrics with data visualization.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React Native", "Firebase", "Chart.js", "Redux", "Expo"],
-    liveUrl: "#",
-    githubUrl: "#",
-    role: "Mobile Developer",
-    contribution: "Developed the mobile application, implemented data visualization, and integrated with health APIs.",
-  },
-  {
-    title: "AI Content Generator",
-    description:
-      "An AI-powered tool that generates marketing content, blog posts, and social media captions based on user prompts.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Python", "OpenAI API", "FastAPI", "React", "AWS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    role: "Backend Developer",
-    contribution: "Built the AI integration, optimized prompt engineering, and developed the API endpoints.",
-  },
+  }
+  
 ]
 
 export function ProjectsSection() {
