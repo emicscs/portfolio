@@ -73,7 +73,7 @@ export function AboutSection() {
           >
             <div className="relative w-[330px] aspect-[3/4] overflow-hidden rounded-xl mb-6 shadow-lg">
               <Image 
-                src="/IMG_0880.webp" 
+                src="/sunset.webp" 
                 alt="Profile Photo" 
                 fill 
                 className="object-cover object-center"
