@@ -60,8 +60,8 @@ export function ContactSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+          <p className="text-muted-foreground max-w-4xl mx-auto">
+            Have a project in mind? Want to talk about AI/ML? Just want to say hi? Feel free to reach out!
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export function ContactSection() {
             <Card className="h-full">
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
-                <CardDescription>Feel free to reach out through any of these channels</CardDescription>
+                <CardDescription></CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start gap-3">

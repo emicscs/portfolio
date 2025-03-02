@@ -3,12 +3,13 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
+import ActiveSectionContextProvider from "@/context/active-section-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
-  description: "A modern personal portfolio website showcasing skills and projects",
+  title: "Emilio Cardillo-Schrader - ML Researcher",
+  description: "My personal portfolio website showcasing my skills and projects",
 }
 
 export default function RootLayout({
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {children}
+        <ActiveSectionContextProvider>
+          {children}
+        </ActiveSectionContextProvider>
         <Toaster />
       </body>
     </html>
