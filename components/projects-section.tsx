@@ -13,7 +13,6 @@ const projects = [
     title: "Real-Time Posture Analysis Tool",
     description:
       "Trained machine learning models in Python with TensorFlow to accurately identify and classify posture, enabling the system to provide immediate visual and auditory feedback on deviations from optimal alignment.",
-    image: "/IMG_5615.jpg",
     technologies: ["Python", "TensorFlow", "OpenCV", "MediaPipe"],
     liveUrl: "#",
     githubUrl: "https://github.com/joshheng12/Upright",
@@ -25,14 +24,12 @@ const projects = [
     title: "Near-Earth Object Surveillance",
     description:
       "Developed a machine learning model to detect and classify near-earth objects using data from the NASA API.",
-    image: "/astronaut-in-space.jpg",
     technologies: ["Python", "Pandas", "NumPy", "TensorFlow", "Scikit-learn", "Keras"],
     liveUrl: "#",
     githubUrl: "#",
     role: "Full Stack Developer",
     contribution: "Built the backend API, implemented real-time functionality, and created the responsive UI.",
   }
-  
 ]
 
 export function ProjectsSection() {
@@ -48,7 +45,7 @@ export function ProjectsSection() {
         >
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of my recent work, showcasing my skills and expertise in various technologies
+            A selection of my recent work
           </p>
         </motion.div>
 
@@ -61,15 +58,7 @@ export function ProjectsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full flex flex-col overflow-hidden">
-                <div className="relative h-64 w-full overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
+              <Card className="h-full flex flex-col">
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>

@@ -9,32 +9,12 @@ const skills = [
   {
     category: "Frontend",
     icon: <Layout className="h-8 w-8 mb-2 text-primary" />,
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+    items: ["Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
   },
   {
     category: "Backend",
     icon: <Server className="h-8 w-8 mb-2 text-primary" />,
-    items: ["Node.js", "Express", "REST APIs", "GraphQL", "Authentication"],
-  },
-  {
-    category: "Database",
-    icon: <Database className="h-8 w-8 mb-2 text-primary" />,
-    items: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Prisma"],
-  },
-  {
-    category: "Mobile",
-    icon: <Smartphone className="h-8 w-8 mb-2 text-primary" />,
-    items: ["React Native", "Expo", "iOS/Android", "Mobile UI/UX"],
-  },
-  {
-    category: "DevOps",
-    icon: <Terminal className="h-8 w-8 mb-2 text-primary" />,
-    items: ["Docker", "CI/CD", "AWS", "Vercel", "Netlify"],
-  },
-  {
-    category: "Version Control",
-    icon: <GitBranch className="h-8 w-8 mb-2 text-primary" />,
-    items: ["Git", "GitHub", "GitLab", "Code Reviews", "Branching Strategies"],
+    items: ["Node.js", "Express", "REST APIs"],
   },
   {
     category: "Design",
@@ -44,17 +24,12 @@ const skills = [
   {
     category: "Programming",
     icon: <Code className="h-8 w-8 mb-2 text-primary" />,
-    items: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
-  },
-  {
-    category: "Soft Skills",
-    icon: <Users className="h-8 w-8 mb-2 text-primary" />,
-    items: ["Communication", "Teamwork", "Problem Solving", "Time Management", "Leadership"],
+    items: ["JavaScript", "TypeScript", "Python", "Haskell"],
   },
   {
     category: "Learning",
     icon: <Brain className="h-8 w-8 mb-2 text-primary" />,
-    items: ["Fast Learner", "Adaptability", "Research", "Self-Motivated", "Continuous Improvement"],
+    items: ["Adaptability", "Research", "Curiosity"],
   },
 ]
 
@@ -71,7 +46,7 @@ export function SkillsSection() {
         >
           <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills, tools, and areas of expertise
+            An overview of my technical skills, tools, and areas of expertise
           </p>
         </motion.div>
 

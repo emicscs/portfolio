@@ -69,10 +69,18 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-1"
+            className="lg:col-span-1 flex flex-col items-center lg:items-start"
           >
-            <div className="relative aspect-square overflow-hidden rounded-xl mb-6">
-              <Image src="/IMG_0880.jpg" alt="Profile Photo" fill className="object-cover" />
+            <div className="relative w-[330px] aspect-[3/4] overflow-hidden rounded-xl mb-6 shadow-lg">
+              <Image 
+                src="/IMG_0880.webp" 
+                alt="Profile Photo" 
+                fill 
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 320px"
+                priority
+                quality={95}
+              />
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader  </h3>

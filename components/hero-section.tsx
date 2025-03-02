@@ -3,8 +3,13 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
-const scrollToContact = () => {
-  const element = document.getElementById("contact");
+const scrollToBlog = () => {
+  const element = document.getElementById("blog");
+  element?.scrollIntoView({ behavior: "smooth" });
+};
+
+const scrollToProjects = () => {
+  const element = document.getElementById("projects");
   element?.scrollIntoView({ behavior: "smooth" });
 };
 
@@ -20,13 +25,14 @@ export function HeroSection() {
           className="text-center"
         >
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Hi, I&apos;m Emilio
+            Hi, 👋 I&apos;m Emilio
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground">
-            I&apos;m a passionate software engineer and AI enthusiast. I love building innovative solutions that make a difference.
+          <p className="mt-6 text-2xl text-muted-foreground">
+            .. a student, machine learning researcher, and software developer.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button onClick={scrollToContact}>Contact Me</Button>
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            <Button onClick={scrollToBlog}>Read My Blog</Button>
+            <Button onClick={scrollToProjects}>View My Projects</Button>
           </div>
         </motion.div>
       </div>

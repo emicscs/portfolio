@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   title: "Emilio Cardillo-Schrader",
   description: "Emilio Cardillo-Schrader's personal website",
   icons: {
-    icon: '/emiLogo.png',
+    icon: '/emiLogo.webp',
     apple: [
-      { url: '/emiLogo.png' },
-      { url: '/emiLogo.png', sizes: '180x180', type: 'image/png' },
+      { url: '/emiLogo.webp' },
+      { url: '/emiLogo.webp', sizes: '180x180', type: 'image/webp' },
     ],
   },
   openGraph: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Emilio Cardillo-Schrader',
     images: [
       {
-        url: '/emiLogo.png',
+        url: '/emiLogo.webp',
         width: 1200,
         height: 630,
         alt: 'Emilio Cardillo-Schrader - Portfolio and Blog',
