@@ -4,7 +4,8 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -86,20 +87,7 @@ export function ContactSection() {
                       href="mailto:john.doe@example.com"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      john.doe@example.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <h4 className="font-medium">Phone</h4>
-                    <a
-                      href="tel:+1234567890"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +1 (234) 567-890
+                      ecardilloschrader@gmail.com ecardillschrader@stevens.edu
                     </a>
                   </div>
                 </div>
@@ -108,15 +96,15 @@ export function ContactSection() {
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h4 className="font-medium">Location</h4>
-                    <p className="text-sm text-muted-foreground">San Francisco, California</p>
+                    <p className="text-sm text-muted-foreground">New York, New York</p>
                   </div>
                 </div>
 
                 <div className="pt-4">
-                  <h4 className="font-medium mb-3">Social Media</h4>
+                  <h4 className="font-medium mb-3">Socials</h4>
                   <div className="flex gap-4">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/emicscs"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full bg-muted hover:bg-muted-foreground/20 transition-colors"
@@ -125,7 +113,7 @@ export function ContactSection() {
                       <span className="sr-only">GitHub</span>
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/emilio-cardillo-schrader-6594b7308/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full bg-muted hover:bg-muted-foreground/20 transition-colors"
@@ -134,13 +122,20 @@ export function ContactSection() {
                       <span className="sr-only">LinkedIn</span>
                     </a>
                     <a
-                      href="https://twitter.com"
+                      href="https://www.linkedin.com/company/stevens-blueprint/posts/?feedView=all"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full bg-muted hover:bg-muted-foreground/20 transition-colors"
                     >
-                      <Twitter className="h-5 w-5" />
-                      <span className="sr-only">Twitter</span>
+                      <div className="relative h-5 w-5">
+                        <Image 
+                          src="/bp logo.png" 
+                          alt="Custom Icon"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="sr-only">Custom Link</span>
                     </a>
                   </div>
                 </div>
@@ -157,8 +152,8 @@ export function ContactSection() {
           >
             <Card>
               <CardHeader>
-                <CardTitle>Send Me a Message</CardTitle>
-                <CardDescription>Fill out the form below and I'll get back to you as soon as possible</CardDescription>
+                <CardTitle>Message Me About Anything!</CardTitle>
+                <CardDescription>I would love to talk about anything mentioned above! Fill out the form below and I'll get back to you as soon as possible</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
