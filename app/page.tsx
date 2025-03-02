@@ -6,6 +6,7 @@ import { ContactSection } from "@/components/contact-section"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
 import BlogSection from "@/components/blog-section"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -15,7 +16,14 @@ export default function Home() {
           <div className="container flex h-16 items-center justify-between">
             <div className="font-bold text-xl">
               <a href="#home" className="transition-colors hover:text-primary">
-                <img src="/emiLogo.png" alt="ECS Logo" className="h-14" />
+                <div className="relative h-14 w-14">
+                  <Image 
+                    src="/emiLogo.png" 
+                    alt="ECS Logo" 
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </a>
             </div>
             <nav className="hidden md:flex items-center gap-6 text-sm">

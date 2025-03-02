@@ -2,8 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Github, Linkedin } from "lucide-react"
-import Image from "next/image"
+import { Mail, MapPin } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 

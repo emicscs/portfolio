@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Calendar, GraduationCap, Briefcase, MapPin } from "lucide-react"
+import { GraduationCap, Briefcase, MapPin } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -40,10 +40,9 @@ const education = [
   },
   {
     degree: "High School Diploma",
-    institution: "Babylon Jr-Sr High School ",
+    institution: "Babylon Jr-Sr High School",
     period: "2020 - 2024",
-    description:
-      "",
+    description: "",
   },
 ]
 
