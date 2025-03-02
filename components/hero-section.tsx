@@ -20,7 +20,7 @@ export function HeroSection() {
         transition={{ duration: 0.5 }}
         className="max-w-3xl mx-auto px-4"
       >
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
           Hi, I'm <span className="text-primary">Emilio Cardillo-Schrader</span>
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">Student, Machine Learning Researcher</h2>

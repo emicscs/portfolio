@@ -9,41 +9,41 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    period: "2021 - Present",
+    title: "Machine Learning Researcher",
+    company: "Brookhaven National Laboratory",
+    period: "June 2025 - August 2025",
     description:
-      "Lead developer for multiple web applications, mentoring junior developers, and implementing best practices for code quality and performance.",
+      "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2018 - 2021",
+    title: "Software Developer",
+    company: "Blueprint",
+    period: "October 2024 - Present",
     description:
-      "Developed and maintained various client projects using React, Node.js, and MongoDB. Collaborated with design and product teams to deliver high-quality software.",
+      "Collaborating within a student team to design, develop, and implement free software tailored to the specific needs of local non-profit organizations.",
   },
   {
-    title: "Frontend Developer",
-    company: "Creative Web Agency",
-    period: "2016 - 2018",
+    title: "Resident Assistant",
+    company: "Stevens Institute of Technology",
+    period: "August 2025 - May 2026",
     description:
-      "Created responsive and accessible user interfaces for client websites and applications. Worked closely with designers to implement pixel-perfect designs.",
+      "Establishing a welcoming and inclusive community environment by building positive relationships with residents, addressing their concerns, and promoting a sense of belonging.",
   },
 ]
 
 const education = [
   {
-    degree: "Master of Computer Science",
-    institution: "Tech University",
-    period: "2014 - 2016",
-    description: "Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors.",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "Stevens Institute of Technology",
+    period: "2024 - 2028",
+    description: "",
   },
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State University",
-    period: "2010 - 2014",
+    degree: "High School Diploma",
+    institution: "Babylon Jr-Sr High School ",
+    period: "2020 - 2024",
     description:
-      "Focused on programming fundamentals, data structures, and algorithms. Participated in various hackathons and coding competitions.",
+      "",
   },
 ]
 
@@ -73,26 +73,27 @@ export function AboutSection() {
             className="lg:col-span-1"
           >
             <div className="relative aspect-square overflow-hidden rounded-xl mb-6">
-              <Image src="/placeholder.svg?height=600&width=600" alt="Profile Photo" fill className="object-cover" />
+              <Image src="/IMG_0880.jpg" alt="Profile Photo" fill className="object-cover" />
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">John Doe</h3>
+              <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader  </h3>
               <p className="text-muted-foreground">
-                Software Engineer with over 7 years of experience specializing in web development and user interface
-                design.
+              I am a passionate computer science student applying machine learning and software development to impactful research and engineering projects.    
+
+
               </p>
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Born: January 1, 1990</span>
+                  <span className="text-sm text-muted-foreground">Born: September 7, 2006</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <GraduationCap className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Master's in Computer Science</span>
+                  <span className="text-sm text-muted-foreground">Bachelor's in Computer Science, 2028</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Briefcase className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">7+ Years Experience</span>
+                  <span className="text-sm text-muted-foreground">Machine Learning Researcher at Brookhaven National Laboratory</span>
                 </div>
               </div>
             </div>
@@ -107,12 +108,12 @@ export function AboutSection() {
           >
             <Card>
               <CardHeader>
-                <CardTitle>My Story</CardTitle>
+                <CardTitle>Who I am</CardTitle>
                 <CardDescription>A brief overview of my journey</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p>
-                  I'm a passionate software engineer with a strong focus on creating intuitive and accessible web
+                  I'm a machine learning and software developer with a strong focus on creating intuitive and accessible web
                   applications. My journey in technology began over a decade ago when I built my first website, and I've
                   been hooked ever since.
                 </p>
