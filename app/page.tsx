@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { ThemeToggle } from "@/components/theme-toggle"
 import BlogSection from "@/components/blog-section"
 import { NewsSection } from "@/components/news-section"
+import { GallerySection } from "@/components/gallery-section"
+import { QuoteSection } from "@/components/quote-section"
 import Image from "next/image"
 
 export default function Home() {
@@ -33,14 +35,17 @@ export default function Home() {
               <a href="#about" className="transition-colors hover:text-primary">
                 About
               </a>
-              <a href="#blog" className="transition-colors hover:text-primary">
-                Blog
-              </a>
               <a href="#news" className="transition-colors hover:text-primary">
                 News
               </a>
+              <a href="#blog" className="transition-colors hover:text-primary">
+                Blog
+              </a>
               <a href="#projects" className="transition-colors hover:text-primary">
                 Projects
+              </a>
+              <a href="#gallery" className="transition-colors hover:text-primary">
+                Media
               </a>
               <a href="#contact" className="transition-colors hover:text-primary">
                 Contact
@@ -54,9 +59,11 @@ export default function Home() {
         <main className="container max-w-6xl mx-auto px-4 py-8">
           <HeroSection />
           <AboutSection />
-          <BlogSection />
           <NewsSection />
+          <BlogSection />
           <ProjectsSection />
+          <GallerySection />
+          <QuoteSection />
           <ContactSection />
         </main>
         <footer className="border-t py-6 md:py-0">

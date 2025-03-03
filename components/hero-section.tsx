@@ -27,8 +27,8 @@ export function HeroSection() {
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Hi, 👋 I&apos;m Emilio
           </h1>
-          <p className="mt-6 text-2xl text-muted-foreground">
-            .. a student, machine learning researcher, and software developer.
+          <p className="mt-6 text-3xl text-muted-foreground">
+            ..a <span className="text-red-400">student</span> at Stevens Institute of Technology, <span className="text-red-500">machine learning researcher</span> at Brookhaven National Lab, and an <span className="text-red-700">engineer</span> when I am inspired to create
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-6">
             <Button onClick={scrollToBlog}>Read My Blog</Button>

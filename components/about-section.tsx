@@ -123,10 +123,10 @@ export function AboutSection() {
                   My journey began a few months ago when I took my first CS class at Stevens, and my passion for technology has only grown since then.
                 </p>
                 <p>
-                  When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature pertaining to neural networks, game theory, and reinforcement learning. Or, I am working on 🔥 projects with my friends!
+                  When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature pertaining to <span className="text-orange-500">neural networks</span>, <span className="text-orange-500">game theory</span>, and <span className="text-orange-500">reinforcement learning</span>. Or, I am working on 🔥 projects with my friends!
                 </p>
                 <p>
-                  Away from my laptop, you can find me playing basketball at the gym, hiking through the mountains, or reading philosophy in the park. I love exploring and learning new things about technology and the world.
+                  Away from my laptop, you can find me playing basketball in the gym, reading philosophy in the park, or djing in my dorm room. I love learning new things about technology and the world.
                 </p>
               </CardContent>
             </Card>
