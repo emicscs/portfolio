@@ -18,7 +18,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative py-20 md:py-32">
       <div className={styles.backgroundAnimation}></div> {/* Background animation */}
-      <div className="container relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
