@@ -6,6 +6,10 @@ import { useSectionInView } from "@/lib/hooks";
 
 const newsItems = [
   {
+    date: "March 4, 2025",
+    content: <>Launched a podcast<a href="#about" className="italic text-orange-600 hover:text-orange-300 transition-colors"> Hello, Zidanni, Emilio, and World </a> with classmate Zidanni Clerigo.</>,
+  },
+  {
     date: "Feb 20, 2025",
     content: <>I accepted a position at <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">Brookhaven National Laboratory</a> as a Machine Learning Researcher.</>,
   },

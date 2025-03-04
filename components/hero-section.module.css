@@ -1,0 +1,25 @@
+.backgroundAnimation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(270deg, #dd4d29, #c86161, #d9a7c7, #f4f4f4, #e0cee0, #c496bc, #b0719d, #cb5d66);
+  background-size: 500% 500%;
+  animation: gradientAnimation 20s ease infinite;
+  z-index: 1;
+  border-radius: 20px; /* Add this line to round the corners */
+  transform: translateX(-50%);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

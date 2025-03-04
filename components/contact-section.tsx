@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Linkedin, Github } from "lucide-react"
+import { Mail, MapPin, Linkedin, Github, Youtube } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -61,6 +61,15 @@ export function ContactSection() {
                     >
                       Emilio Cardillo-Schrader
                     </a>
+                    <br />
+                    <a
+                      href="https://www.linkedin.com/in/another-link/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Hello, Zidanni, Emilio, and World
+                    </a>
                   </div>
                 </div>
 
@@ -75,6 +84,21 @@ export function ContactSection() {
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       emicscs
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Youtube className="h-5 w-5 text-primary mt-0.5" />
+                  <div>
+                    <h4 className="font-medium">YouTube</h4>
+                    <a
+                      href="https://www.youtube.com/channel/your-channel-id"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Hello Zidanni, Emilio, and World
                     </a>
                   </div>
                 </div>

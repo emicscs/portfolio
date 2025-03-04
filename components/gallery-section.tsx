@@ -20,9 +20,9 @@ const images = [
     description: "our team Hack@Brown 2025 team table",
   },
   {
-    src: "/djmon.jpg",
+    src: "/nycsunset.webp",
     alt: "Description of image 1",
-    description: "dj set in a backyard",
+    description: "photo of WTC from Stevens Institute of Technology",
   },
   {
     src: "/crafting.webp",
