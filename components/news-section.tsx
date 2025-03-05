@@ -7,7 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 const newsItems = [
   {
     date: "March 4, 2025",
-    content: <>Launched a podcast<a href="#about" className="italic text-orange-600 hover:text-orange-300 transition-colors"> Hello, Zidanni, Emilio, and World </a> with classmate Zidanni Clerigo.</>,
+    content: <>Launched a podcast<a href="https://www.youtube.com/channel/UCxOIYDotTE2eID3Z1psnD-w" className="italic text-orange-600 hover:text-orange-300 transition-colors"> Hello, Zidanni, Emilio, and World </a> with classmate Zidanni Clerigo.</>,
   },
   {
     date: "Feb 20, 2025",

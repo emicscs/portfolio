@@ -63,7 +63,7 @@ export function ContactSection() {
                     </a>
                     <br />
                     <a
-                      href="https://www.linkedin.com/in/another-link/"
+                      href="https://www.linkedin.com/company/hello-emilio-zidanni-and-world/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bj%2Bc%2FGDJoQgSxEORu52OKrA%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
