@@ -41,9 +41,6 @@ export default function Home() {
               <a href="#blog" className="transition-colors hover:text-primary">
                 Blog
               </a>
-              <a href="#projects" className="transition-colors hover:text-primary">
-                Projects
-              </a>
               <a href="#gallery" className="transition-colors hover:text-primary">
                 Media
               </a>
@@ -61,7 +58,6 @@ export default function Home() {
           <AboutSection />
           <NewsSection />
           <BlogSection />
-          <ProjectsSection />
           <GallerySection />
           <QuoteSection />
           <ContactSection />

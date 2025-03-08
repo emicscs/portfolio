@@ -11,7 +11,7 @@ const newsItems = [
   },
   {
     date: "Feb 20, 2025",
-    content: <>I accepted a position at <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">Brookhaven National Laboratory</a> as a Machine Learning Researcher.</>,
+    content: <>I accepted an offer from <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">CDS</a> at <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">Brookhaven National Laboratory</a> as a Machine Learning Researcher.</>,
   },
   {
     date: "Feb 1, 2025",
