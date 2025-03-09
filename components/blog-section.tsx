@@ -13,22 +13,23 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
+  
   {
-    title: "Sample Blog Post 1",
-    description: "coming soon",
-    date: "2024-03-20",
-    link: "/blog/sample-post-1",
+    title: "Winning Go: A Computer Scientist's Strategy",
+    description: "Google’s Artificial Intelligence Lab, DeepMind, has emerged as a frontrunner in AI and ML research over the last decade or so...",
+    date: "2024-03-8",
+    link: "https://docs.google.com/document/d/1jjLNgJT455qk7ktMA3WxGKVd60cbcTmyMoq5kwbbIKY/edit?usp=sharing",
   },
   {
-    title: "Sample Blog Post 2",
-    description: "coming soon",
-    date: "2024-03-15",
-    link: "/blog/sample-post-2",
+    title: "",
+    description: "",
+    date: "2024-03-16",
+    link: "https://docs.google.com/document/d/1jjLNgJT455qk7ktMA3WxGKVd60cbcTmyMoq5kwbbIKY/edit?usp=sharing",
   },
   {
-    title: "Sample Blog Post 3",
-    description: "coming soon",
-    date: "2024-03-15",
+    title: "",
+    description: "",
+    date: "2024-03-23",
     link: "/blog/sample-post-3",
   },];
 
