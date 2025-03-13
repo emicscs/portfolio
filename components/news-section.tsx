@@ -15,7 +15,7 @@ const newsItems = [
   },
   {
     date: "Feb 1, 2025",
-    content: <>I attended Hack@Brown at Brown University. Here, my friends and I built <a href="#projects" className="italic text-orange-600 hover:text-orange-300 transition-colors">Upright</a>, a posture analysis tool.</>,
+    content: <>I attended Hack@Brown at Brown University. Here, my friends and I built <a className="italic text-orange-600 hover:text-orange-300 transition-colors">Upright</a>, a posture analysis tool.</>,
   },
   {
     date: "Jan 31, 2025",

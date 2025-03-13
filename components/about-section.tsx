@@ -125,7 +125,7 @@ export function AboutSection() {
                   When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature trying to make sense of <span className="text-orange-500">neural networks</span>, <span className="text-orange-500">game theory</span>, and <span className="text-orange-500">reinforcement learning</span>. Or, I am working on projects with my friends!
                 </p>
                 <p>
-                  My classmate Zidanni Clerigo and I are about to launch the pilot episode of our podcast, <a href="#" className="text-orange-500 italic">Hello, Zidanni, Emilio, and World!</a> which will uncover the essence of various topics in computing and design.
+                  My classmate Zidanni Clerigo and I are about to launch the pilot episode of our podcast, <a href="https://www.youtube.com/watch?v=arihrwnw8qU&t=3673s&ab_channel=Hello%2CZidanni%2CEmilio%2CandWorld" className="text-orange-500 italic">Hello, Zidanni, Emilio, and World!</a> which will uncover the essence of various topics in computing and design.
                 </p>
                 <p>
                   Away from my laptop, you can find me playing basketball in the gym, reading philosophy in the park, or djing in my dorm room. I love learning new things about technology and the world.
