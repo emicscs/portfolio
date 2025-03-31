@@ -36,8 +36,6 @@ const blogPosts: BlogPost[] = [
 export default function BlogSection() {
   const { ref } = useSectionInView("Blog");
 
-
-
   
   return (
     <motion.section
@@ -48,7 +46,7 @@ export default function BlogSection() {
       transition={{ delay: 0.175 }}
       id="blog"
     >
-      <h2 className="text-3xl font-bold mb-4">Personal Blog</h2>
+      <h2 className="text-3xl font-bold mb-4">Blog</h2>
       <p className="text-muted-foreground max-w-2xl mx-auto">
         A collection of my thoughts and reflections on various topics.
       </p>

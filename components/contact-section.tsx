@@ -19,7 +19,7 @@ export function ContactSection() {
         >
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
           <p className="text-muted-foreground max-w-4xl mx-auto">
-            Have a cool project idea? Want to talk about AI/ML? Just want to say hi? Feel free to reach out!
+            Have a cool project idea? Want to talk about AI/ML? Just want to say hi? Please reach out!
           </p>
         </motion.div>
 
@@ -42,9 +42,15 @@ export function ContactSection() {
                     <h4 className="font-medium">Email</h4>
                     <a
                       href="mailto:ecardilloschrader@gmail.com"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors block mb-2"
                     >
-                      ecardilloschrader@gmail.com | ecardillschrader@stevens.edu
+                      ecardilloschrader@gmail.com
+                    </a>
+                    <a
+                      href="mailto:ecardill@stevens.edu"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors block"
+                    >
+                      ecardill@stevens.edu
                     </a>
                   </div>
                 </div>

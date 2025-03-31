@@ -16,9 +16,9 @@ const experiences = [
       "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
   },
   {
-    title: "Freshman Representative",
+    title: "Vice President of Technology",
     company: "Blueprint",
-    period: "October 2024 - Present",
+    period: "March 2025 - Present",
     description:
       "Collaborating within a student team to design, develop, and implement free software tailored to the specific needs of local non-profit organizations.",
   },
@@ -27,7 +27,7 @@ const experiences = [
     company: "Stevens Institute of Technology",
     period: "August 2025 - May 2026",
     description:
-      "Forming a welcoming and inclusive community environment by building positive relationships with residents, addressing their concerns, and promoting a sense of belonging.",
+      "Building a an inclusive environment by building positive relationships with residents, addressing their concerns, and promoting a sense of belonging.",
   },
 ]
 
@@ -85,7 +85,6 @@ export function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader  </h3>
               <p className="text-muted-foreground">
-              ..a passionate computer science student applying machine learning and software development to research and engineering.    
 
 
               </p>
@@ -119,16 +118,13 @@ export function AboutSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p>
-                  My journey began a few months ago when I took my first CS class at Stevens, and my passion for technology has only grown since then.
+                  My journey began a few months ago when I took my first CS class at Stevens, and my interest in computing has only grown since then.
                 </p>
                 <p>
-                  When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature trying to make sense of <span className="text-orange-500">neural networks</span>, <span className="text-orange-500">game theory</span>, and <span className="text-orange-500">reinforcement learning</span>. Or, I am working on projects with my friends!
+                  When I am not studying or working on problem sets (which has been rare lately 🥲), I am watching youtube videos and reading literature trying to make sense of <span className="text-orange-500">neural networks</span>, <span className="text-orange-500">game theory</span>, and <span className="text-orange-500">reinforcement learning</span>, topics I hope to write more blog posts on soon!
                 </p>
                 <p>
-                  My classmate Zidanni Clerigo and I are about to launch the pilot episode of our podcast, <a href="https://www.youtube.com/watch?v=arihrwnw8qU&t=3673s&ab_channel=Hello%2CZidanni%2CEmilio%2CandWorld" className="text-orange-500 italic">Hello, Zidanni, Emilio, and World!</a> which will uncover the essence of various topics in computing and design.
-                </p>
-                <p>
-                  Away from my laptop, you can find me playing basketball in the gym, reading philosophy in the park, or djing in my dorm room. I love learning new things about technology and the world.
+                  Away from my laptop, you can find me playing chess or basketball in the gym, reading philosophy in the park, or djing in my dorm room. I love learning new things about technology and the world.
                 </p>
               </CardContent>
             </Card>

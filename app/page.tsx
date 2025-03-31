@@ -18,9 +18,9 @@ export default function Home() {
           <div className="container max-w-6xl mx-auto flex h-16 items-center px-4">
             <div className="font-bold text-xl">
               <a href="#home" className="transition-colors hover:text-primary">
-                <div className="relative h-12 w-12">
+                <div className="relative h-16 w-16">
                   <Image 
-                    src="/emiLogo.webp" 
+                    src="/emigifsite.gif" 
                     alt="ECS Logo" 
                     fill
                     className="object-contain"
@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            <nav className="hidden md:flex items-center gap-8 text-sm flex-1 justify-center">
+            <nav className="hidden md:flex items-center gap-8 text-sm justify-center flex-1 pr-12">
               <a href="#home" className="transition-colors hover:text-primary">
                 Home
               </a>

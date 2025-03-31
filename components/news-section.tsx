@@ -6,12 +6,16 @@ import { useSectionInView } from "@/lib/hooks";
 
 const newsItems = [
   {
+    date: "March 30, 2025",
+    content: <>Won my first hackathon! Made <a href="https://devpost.com/software/pelican-ai?ref_content=user-portfolio&ref_feature=in_progress" className="italic text-orange-600 hover:text-orange-300 transition-colors"> Caremigo </a> with friends Chinli Ong, Daniel Llonch, and Zidanni Clerigo.</>,
+  },
+  {
     date: "March 4, 2025",
     content: <>Launched a podcast<a href="https://www.youtube.com/channel/UCxOIYDotTE2eID3Z1psnD-w" className="italic text-orange-600 hover:text-orange-300 transition-colors"> Hello, Zidanni, Emilio, and World </a> with classmate Zidanni Clerigo.</>,
   },
   {
     date: "Feb 20, 2025",
-    content: <>I accepted an offer from <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">CDS</a> at <a href="https://www.bnl.gov/world/" className="text-orange-600 hover:text-orange-300 transition-colors">Brookhaven National Laboratory</a> as a Machine Learning Researcher.</>,
+    content: <>I accepted an offer from <a href="https://www.bnl.gov/world/" className="italic text-orange-600 hover:text-orange-300 transition-colors">CDS</a> at <a href="https://www.bnl.gov/world/" className="italic text-orange-600 hover:text-orange-300 transition-colors">Brookhaven National Laboratory</a> as a Machine Learning Researcher.</>,
   },
   {
     date: "Feb 1, 2025",

@@ -5,24 +5,24 @@ import Image from "next/image"
 
 const images = [
   {
-    src: "/ari.webp",
+    src: "/qhwin.webp",
     alt: "Description of image 3",
-    description: "exploring Red Rock Canyon, Las Vegas NV",
+    description: "my team's win at QuackHacks 2025",
   },
   {
-    src: "/bpteam.webp",
+    src: "/washchess.webp",
     alt: "Description of image 2",
-    description: "Stevens Blueprint executive team, 2024-2025",
+    description: "chess with friends at Washington Square Park",
   },
   {
-    src: "/habtable.webp",
+    src: "/hezwmug.webp",
     alt: "Description of image 4",
-    description: "our team Hack@Brown 2025 team table",
+    description: "failed Hello, Zidanni, Emilio, and World logo design photo",
   },
   {
-    src: "/nycsunset.webp",
+    src: "/dormsunset.webp",
     alt: "Description of image 1",
-    description: "photo of WTC from Stevens Institute of Technology",
+    description: "sunset from my dorm room",
   },
   {
     src: "/crafting.webp",
