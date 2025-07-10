@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { MusicalNotes } from "./musical-notes"
+import { TextBubble } from "./text-bubble"
 
 const images = [
   {
@@ -48,7 +50,21 @@ const images = [
 
 export function GallerySection() {
   return (
-    <section id="gallery" className="py-20">
+    <section id="gallery" className="py-20 relative">
+      <MusicalNotes position="left" />
+      <MusicalNotes position="right" />
+      <TextBubble 
+        text="wait.. where is that music coming from?"
+        position="top"
+        side="left"
+        delay={2}
+      />
+      <TextBubble 
+        text="uhh.. <a href='https://emibeats.com'>emibeats.com</a>??"
+        position="top"
+        side="right"
+        delay={4}
+      />
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
