@@ -7,7 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 const newsItems = [
   {
     date: "July 2, 2025",
-    content: <>delivered 3-minute-thesis (3MT) spark talk for AI researchers and staff scientists at BNL. </>,
+    content: <>delivered a spark (3-min) talk on my project this summer for researchers and staff scientists at BNL. </>,
   },
   {
     date: "March 30, 2025",
@@ -27,7 +27,7 @@ const newsItems = [
   },
   {
     date: "Feb 1, 2025",
-    content: <>attended Hack@Brown at Brown University. here, my friends and I built <a className="italic text-orange-600 hover:text-orange-300 transition-colors">Upright</a>, a posture analysis tool.</>,
+    content: <>attended Hack@Brown at Brown University. here, my friends and I built <a className="italic text-orange-600 hover:text-orange-300 transition-colors">Upright</a>.</>,
   },
   {
     date: "Jan 31, 2025",

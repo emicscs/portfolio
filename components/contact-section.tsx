@@ -32,7 +32,7 @@ export function ContactSection() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>msg me!</CardTitle>
+                <CardTitle>say hi..</CardTitle>
                 <CardDescription></CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">

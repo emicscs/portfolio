@@ -25,27 +25,7 @@ const images = [
     src: "/dormsunset.webp",
     alt: "Description of image 1",
     description: "sunset from my dorm room",
-  },
-  {
-    src: "/crafting.webp",
-    alt: "Description of image 5",
-    description: "i've been reading.. Crafting Interpreters by Bob Nystrom",
-  },
-  {
-    src: "/demis.webp",
-    alt: "Description of image 6",
-    description: "i've been studying.. Demis Hassabis and Google DeepMind",
-  },
-  {
-    src: "/elcomienzo.webp",
-    alt: "Description of image 7",
-    description: "i've been listening to.. El Comienzo by Grupo Frontera"
-  },
-  {
-    src: "/perfectdays.webp",
-    alt: "Description of image 8",
-    description: "i just watched.. Perfect Days by Wim Wenders",
-  },
+  }
   ]
 
 export function GallerySection() {
