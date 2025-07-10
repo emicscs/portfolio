@@ -17,9 +17,9 @@ export function ContactSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl font-bold mb-4">contact</h2>
           <p className="text-muted-foreground max-w-4xl mx-auto">
-            Have a cool project idea? Want to talk about AI/ML? Just want to say hi? Please reach out!
+            lets talk!
           </p>
         </motion.div>
 
@@ -32,14 +32,14 @@ export function ContactSection() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
+                <CardTitle>msg me!</CardTitle>
                 <CardDescription></CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start gap-3">
                   <Mail className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-medium">Email</h4>
+                    <h4 className="font-medium">email</h4>
                     <a
                       href="mailto:ecardilloschrader@gmail.com"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors block mb-2"
@@ -58,7 +58,7 @@ export function ContactSection() {
                 <div className="flex items-start gap-3">
                   <Linkedin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-medium">LinkedIn</h4>
+                    <h4 className="font-medium">linkedIn</h4>
                     <a
                       href="https://www.linkedin.com/in/emilio-cardillo-schrader/"
                       target="_blank"
@@ -82,7 +82,7 @@ export function ContactSection() {
                 <div className="flex items-start gap-3">
                   <Github className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-medium">GitHub</h4>
+                    <h4 className="font-medium">github</h4>
                     <a
                       href="https://github.com/emicscs"
                       target="_blank"
@@ -97,7 +97,7 @@ export function ContactSection() {
                 <div className="flex items-start gap-3">
                   <Youtube className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-medium">YouTube</h4>
+                    <h4 className="font-medium">youtube</h4>
                     <a
                       href="https://www.youtube.com/channel/your-channel-id"
                       target="_blank"
@@ -112,7 +112,7 @@ export function ContactSection() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
-                    <h4 className="font-medium">Location</h4>
+                    <h4 className="font-medium">location</h4>
                     <p className="text-sm text-muted-foreground">New York, New York</p>
                   </div>
                 </div>

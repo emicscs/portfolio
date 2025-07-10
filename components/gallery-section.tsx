@@ -44,9 +44,7 @@ const images = [
     alt: "Description of image 8",
     description: "i just watched.. Perfect Days by Wim Wenders",
   },
-  
-  // Add more images as needed
-]
+  ]
 
 export function GallerySection() {
   return (
@@ -59,9 +57,9 @@ export function GallerySection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Media</h2>
+          <h2 className="text-3xl font-bold mb-4">media</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Images from my projects, travels, and media, and a quote that resonates with me.
+            images from my projects, travels, and interests, as well as a quote that i enjoy..
           </p>
         </motion.div>
 

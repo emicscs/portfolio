@@ -46,9 +46,9 @@ export default function BlogSection() {
       transition={{ delay: 0.175 }}
       id="blog"
     >
-      <h2 className="text-3xl font-bold mb-4">Blog</h2>
+      <h2 className="text-3xl font-bold mb-4">blog</h2>
       <p className="text-muted-foreground max-w-2xl mx-auto">
-        A collection of my thoughts and reflections on various topics.
+        my thoughts on some areas of computing..
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         {blogPosts.map((post, index) => (

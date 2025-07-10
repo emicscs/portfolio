@@ -26,12 +26,9 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-            <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl relative z-20" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-            Hi.. I am <span className="text-blue-900">Emilio!</span> 
+            <h1 className="text-5xl font-extrabold tracking-tight sm:text-9xl relative z-20" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+            hi.. i am <span className="text-blue-900">Emilio!</span> 
             </h1>
-            <p className="mt-6 text-3xl relative z-20" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-            ..a <span className="text-blue-900">student</span> at Stevens Institute of Technology, <span className="text-blue-900">machine learning researcher</span> at Brookhaven National Lab, and an <span className="text-blue-900">engineer</span> when I am inspired to create
-            </p>
           <div className="mt-8 flex flex-wrap justify-center gap-6 relative z-20">
             <Button onClick={scrollToBlog} className="bg-transparent text-blue-900 hover:bg-blue-900/10 border-2 border-blue-900">See My News</Button>
             <Button onClick={scrollToProjects} className="bg-transparent text-blue-900 hover:bg-blue-900/10 border-2 border-blue-900">Read My Blog</Button>
