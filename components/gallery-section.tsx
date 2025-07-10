@@ -75,7 +75,7 @@ export function GallerySection() {
         >
           <h2 className="text-3xl font-bold mb-4">media</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            images from my projects, travels, and interests, as well as a quote that i enjoy..
+            some images and a quote that i enjoy..
           </p>
         </motion.div>
 

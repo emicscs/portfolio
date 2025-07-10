@@ -33,7 +33,7 @@ export const TextBubble = ({
   const getPositionClasses = () => {
     switch (position) {
       case 'top':
-        return 'top-20';
+        return 'top-18';
       case 'bottom':
         return 'bottom-20';
       default:
@@ -50,9 +50,9 @@ export const TextBubble = ({
 
   const getSideClasses = () => {
     if (side === 'right') {
-      return '-right-40';
+      return '-right-0';
     }
-    return '-left-40';
+    return '-left-0';
   };
 
   const getAnimationDirection = () => {

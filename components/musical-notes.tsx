@@ -79,8 +79,8 @@ export const MusicalNotes = ({ position = 'right' }: MusicalNotesProps) => {
   return (
     <div
       ref={containerRef}
-      className={`absolute top-1 -translate-y-1/2 w-24 h-64 pointer-events-none overflow-hidden z-10 hidden lg:block ${
-        position === 'right' ? '-right-40' : '-left-40'
+      className={`absolute top-1 -translate-y-1/2 w-24 h-60 pointer-events-none overflow-hidden z-10 hidden lg:block ${
+        position === 'right' ? '-right-0' : '-left-0'
       }`}
       style={{
         animation: 'none',
