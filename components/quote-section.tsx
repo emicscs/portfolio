@@ -1,16 +1,16 @@
-"use client";
-
-import React from 'react';
+"use client"
 
 export const QuoteSection = () => {
   return (
-    <section id="quote" className="py-8 bg-gray-300 border-2 border-orange-500">
-      <div className="container max-w-6xl mx-auto px-4 text-center">
-        <blockquote className="text-2xl italic font-semibold text-gray-800">
-          "computers are useless, they can only give you answers."
-        </blockquote>
-        <cite className="block mt-4 text-lg text-gray-600">- Pablo Picasso</cite>
+    <section id="quote" className="border-b border-border/80 py-16">
+      <div className="mx-auto w-full text-center">
+        <div className="rounded-lg border border-border/80 bg-muted/60 px-6 py-10">
+          <blockquote className="text-2xl font-medium italic text-foreground">
+            &quot;Anybody who preserves the ability to recognize beauty will never get old.&quot;
+          </blockquote>
+          <cite className="mt-4 block text-base text-muted-foreground">- Franz Kafka</cite>
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}

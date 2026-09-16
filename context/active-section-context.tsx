@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-export type SectionName = "Home" | "About" | "Blog" | "Contact" | "News";
+export type SectionName = "Home" | "About" | "Blog" | "Contact" | "News" | "Media";
 
 export const links = [
   {
@@ -43,7 +43,7 @@ export default function ActiveSectionContextProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] = useState<SectionName>("About");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
   return (

@@ -1,27 +1,34 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { useState } from "react"
 import Image from "next/image"
-import { GraduationCap, Briefcase, MapPin } from "lucide-react"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const experiences = [
   {
-    title: "Machine Learning Researcher",
+    title: "Machine Learning Research Intern",
     company: "Brookhaven National Laboratory",
-    period: "June 2025 - August 2025",
+    period: "June 2025 - Present",
     description:
-      "designing deep learning architectures optimized for reconstructing 4D fMRI data from sparse 2D inputs.",
+      "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
   },
   {
-    title: "Vice President of Technology",
-    company: "Blueprint",
-    period: "March 2025 - Present",
+    title: "Research Assistant",
+    company: "Stevens Institute of Technology",
+    period: "January 2026 - Present",
     description:
-      "leading a student team to develop and implement free software tailored to the needs of non-profits.",
-  }
+      "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
+  },
+  {
+    title: "VP of Engineering",
+    company: "Blueprint",
+    period: "March 2025 - January 2026",
+    description:
+      "Collaborating within a student team to design, develop, and implement free software tailored to the specific needs of local non-profit organizations.",
+  },
 ]
 
 const education = [
@@ -40,121 +47,94 @@ const education = [
 ]
 
 export function AboutSection() {
-  return (
-    <section id="about" className="py-20">
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl font-bold mb-4">about me</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            what am i up to?..
-          </p>
-        </motion.div>
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({})
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-1 flex flex-col items-center lg:items-start"
-          >
-            <div className="relative w-[330px] aspect-[3/4] overflow-hidden rounded-xl mb-6 shadow-lg">
-              <Image 
-                src="/sunset.webp" 
-                alt="Profile Photo" 
-                fill 
+  const toggleExpanded = (index: number) => {
+    setExpanded((current) => ({ ...current, [index]: !current[index] }))
+  }
+
+  return (
+    <section id="about" className="border-b border-border/80 pb-16 pt-4 md:pt-6">
+      <div className="mx-auto w-full">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+          <div className="flex flex-col items-center lg:col-span-1 lg:items-start">
+            <div className="relative mb-6 aspect-[3/4] w-[330px] overflow-hidden rounded-lg border border-border">
+              <Image
+                src="/sunset.webp"
+                alt="Profile Photo"
+                fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 320px"
                 priority
                 quality={95}
               />
             </div>
-            <div className="space-y-1">
-              <p className="text-muted-foreground">
-
-
-              </p>
-              <div className="flex flex-col space-y-2">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">new york, NY, US</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <GraduationCap className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">bachelor's in computer science, 2028</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Briefcase className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">machine learning researcher at Brookhaven National Laboratory</span>
-                </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader</h3>
+              <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
+                <p>+ New York, NY</p>
+                <p>+ Bachelor&apos;s in Computer Science, 2028</p>
+                <p>+ Machine Learning Research Intern at Brookhaven National Laboratory</p>
+                <p>+ Computer Vision Lab Research Assistant at Stevens Institute of Technology</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-2"
-          >
-            <div>
-              <div className="space-y-4">
+          <div className="lg:col-span-2">
+            <Card className="border-border/90">
+              <CardHeader>
+                <CardDescription>About Me</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4 text-[0.97rem] text-foreground/95">
                 <p>
-                  my journey began about about a year ago when I took my first CS class at Stevens.. and my love for computing has only grown since then.
+                  I am a 2nd-year undergraduate studying computer science and mathematics at Stevens Institute of Technology.
                 </p>
                 <p>
-                  my current research is in spatiotemporal learning. i am trying to represent a traditional 4D fMRI with a limited number of sparse 2D cross-sections to decrease scan times and acquasition limitations.
+                  I work as a research assistant within the Computer Vision lab at Stevens, and as a machine learning research intern in the Computational Data Science group at Brookhaven National Laboratory.
                 </p>
                 <p>
-                  some topics that i have been reading and watching youtube videos about are generalizable implicit neural representations and neural radiance fields. i have also been trying to reimplement them in my free time.
+                  My current projects focus on developing an expressive and uncertainity-aware framework for uncertainity quantification on spatiotemporal predictions made by neural field models. I am also interested in applying UQ methods to robotics and autonomous systems.
                 </p>
                 <p>
-                  away from my computer, i like to play chess and basketball, read philosophy, and make music. below you will find my blog (which will be more active soon), news happening with me, and some media i have been enjoying. thx for reading :0 ! 
+                  Outside of research, I am math and computer science tutor, a Resident Assistant at Stevens, and a freelance web developer. Some of my hobbies include reading, playing basketball, producing/recording music, and DJing.
                 </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
-            <div className="mt-8">
+            <div className="mt-8 rounded-lg border border-border/80 bg-card p-5">
               <Tabs defaultValue="experience">
                 <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="experience">experience</TabsTrigger>
-                  <TabsTrigger value="education">education</TabsTrigger>
+                  <TabsTrigger value="experience">Experience</TabsTrigger>
+                  <TabsTrigger value="education">Education</TabsTrigger>
                 </TabsList>
                 <TabsContent value="experience" className="mt-6 space-y-6">
                   {experiences.map((exp, index) => (
-                    <div key={index} className="flex gap-4">
-                      <div className="flex flex-col items-center">
-                        <div className="rounded-full bg-primary/20 p-2">
-                          <Briefcase className="h-4 w-4 text-primary" />
-                        </div>
-                        {index < experiences.length - 1 && <div className="w-px h-full bg-border mt-2" />}
-                      </div>
+                    <div key={index} className="rounded-md border border-border/80 p-4">
                       <div className="space-y-2">
                         <h4 className="font-medium">{exp.title}</h4>
                         <div className="text-sm text-muted-foreground">
                           {exp.company} | {exp.period}
                         </div>
-                        <p className="text-sm text-muted-foreground">{exp.description}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {expanded[index]
+                            ? exp.description
+                            : `${exp.description.slice(0, 110)}...`}
+                        </p>
+                        <Button
+                          variant="link"
+                          size="sm"
+                          className="h-auto px-0 py-0 text-sm"
+                          onClick={() => toggleExpanded(index)}
+                        >
+                          {expanded[index] ? "See less" : "See more"}
+                        </Button>
                       </div>
                     </div>
                   ))}
                 </TabsContent>
                 <TabsContent value="education" className="mt-6 space-y-6">
                   {education.map((edu, index) => (
-                    <div key={index} className="flex gap-4">
-                      <div className="flex flex-col items-center">
-                        <div className="rounded-full bg-primary/20 p-2">
-                          <GraduationCap className="h-4 w-4 text-primary" />
-                        </div>
-                        {index < education.length - 1 && <div className="w-px h-full bg-border mt-2" />}
-                      </div>
+                    <div key={index} className="rounded-md border border-border/80 p-4">
                       <div className="space-y-2">
                         <h4 className="font-medium">{edu.degree}</h4>
                         <div className="text-sm text-muted-foreground">
@@ -167,10 +147,9 @@ export function AboutSection() {
                 </TabsContent>
               </Tabs>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
   )
 }
-

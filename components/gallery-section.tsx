@@ -1,9 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
 import Image from "next/image"
-import { MusicalNotes } from "./musical-notes"
-import { TextBubble } from "./text-bubble"
 
 const images = [
   {
@@ -25,49 +22,21 @@ const images = [
     src: "/dormsunset.webp",
     alt: "Description of image 1",
     description: "sunset from my dorm room",
-  }
-  ]
+  },
+]
 
 export function GallerySection() {
   return (
-    <section id="gallery" className="py-20 relative">
-      <MusicalNotes position="left" />
-      <MusicalNotes position="right" />
-      <TextBubble 
-        text="wait.. where is that music coming from?"
-        position="top"
-        side="left"
-        delay={2}
-      />
-      <TextBubble 
-        text="uhh.. <a href='https://emibeats.com'>emibeats.com</a>??"
-        position="top"
-        side="right"
-        delay={4}
-      />
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl font-bold mb-4">media</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            some images and a quote that i enjoy..
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <section id="gallery" className="border-b border-border/80 py-16">
+      <div className="mx-auto w-full">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-semibold tracking-tight">Media</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {images.map((image, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="relative overflow-hidden rounded-lg shadow-lg h-96 flex flex-col"
+              className="relative flex h-96 flex-col overflow-hidden rounded-lg border border-border/80 bg-card"
             >
               <div className="relative h-2/3">
                 <Image
@@ -80,10 +49,12 @@ export function GallerySection() {
                   quality={95}
                 />
               </div>
-              <div className="p-4 h-1/3 flex items-center justify-center">
-                <p className="text-center">{image.description}</p>
+              <div className="flex h-1/3 items-center justify-center p-4">
+                <p className="text-center text-sm text-muted-foreground">
+                  {image.description}
+                </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -11,27 +11,40 @@ export const metadata: Metadata = {
   title: "Emilio Cardillo-Schrader",
   description: "Emilio Cardillo-Schrader's personal website",
   icons: {
-    icon: '/emiLogo.ico',
+    icon: "/emiLogo.ico",
     apple: [
-      { url: '/emiLogo.webp' },
-      { url: '/emiLogo.webp', sizes: '180x180', type: 'image/webp' },
+      { url: "/emiLogo.webp" },
+      { url: "/emiLogo.webp", sizes: "180x180", type: "image/webp" },
     ],
   },
   openGraph: {
-    title: 'Emilio Cardillo-Schrader',
-    description: 'Personal portfolio and blog of Emilio Cardillo-Schrader',
-    url: 'https://emiliocardilloschrader.com',
-    siteName: 'Emilio Cardillo-Schrader',
+    title: "Emilio Cardillo-Schrader",
+    description: "Personal portfolio of Emilio Cardillo-Schrader",
+    url: "https://emiliocardilloschrader.com",
+    siteName: "Emilio Cardillo-Schrader",
     images: [
       {
-        url: '/emiLogo.webp',
+        url: "/emiLogo.webp",
         width: 1200,
         height: 630,
-        alt: 'Emilio Cardillo-Schrader - Portfolio and Blog',
+        alt: "Emilio Cardillo-Schrader - Portfolio",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emilio Cardillo-Schrader",
+    description: "Personal portfolio of Emilio Cardillo-Schrader",
+    images: [
+      {
+        url: "/emiLogo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Emilio Cardillo-Schrader - Portfolio",
+      },
+    ],
   },
 }
 
@@ -45,8 +58,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          forcedTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <ActiveSectionContextProvider>
@@ -57,4 +71,3 @@ export default function RootLayout({
     </html>
   )
 }
-
