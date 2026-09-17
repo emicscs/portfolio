@@ -10,17 +10,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 const experiences = [
   {
     title: "Machine Learning Research Intern",
-    company: "Brookhaven National Laboratory",
-    period: "June 2025 - Present",
+    company: "Brookhaven National Lab",
+    period: "May 2025 - August 2025, May 2026 - August 2026",
     description:
-      "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
+      "Developing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
   },
   {
-    title: "Research Assistant",
+    title: "Computer Vision Research Assistant",
     company: "Stevens Institute of Technology",
     period: "January 2026 - Present",
     description:
-      "Designing deep learning architectures optimized for processing spatiotemporal data, focusing on improving the accuracy and efficiency of scientific insights derived from data.",
+      "Refactoring decoder architecture of a climate forecasting model to jointly predict forecasts and calibrated uncertainty.",
   },
   {
     title: "VP of Engineering",
@@ -29,11 +29,25 @@ const experiences = [
     description:
       "Collaborating within a student team to design, develop, and implement free software tailored to the specific needs of local non-profit organizations.",
   },
+  {
+    title: "Math Circle Lead",
+    company: "Stevens Math Circle Initiative",
+    period: "January 2026 - Present",
+    description:
+      "Leading a group of ~10 students in exploring advanced areas of mathematics and cultivating the ability to effectively reason about and articulate mathematical ideas.",
+  },
+  {
+    title: "Resident Assistant",
+    company: "Stevens Institute of Technology",
+    period: "August 2025 - Present",
+    description:
+      "Oversee a residential community of 20+ students, exercising independent judgment to resolve conflicts and address resident concerns while delegating responsibilities and coordinating initiatives with fellow staff.",
+  },
 ]
 
 const education = [
   {
-    degree: "Bachelor of Science in Computer Science",
+    degree: "B.S in Computer Science, Minor in Mathematics",
     institution: "Stevens Institute of Technology",
     period: "2024 - 2028",
     description: "",
@@ -73,9 +87,11 @@ export function AboutSection() {
               <h3 className="text-xl font-semibold">Emilio Cardillo-Schrader</h3>
               <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
                 <p>+ New York, NY</p>
-                <p>+ Bachelor&apos;s in Computer Science, 2028</p>
-                <p>+ Machine Learning Research Intern at Brookhaven National Laboratory</p>
-                <p>+ Computer Vision Lab Research Assistant at Stevens Institute of Technology</p>
+                <p>+ B.S. in Computer Science <br />
+                  Minor in Mathematics <br />
+                  Graduating May 2028</p>
+                <p>+ Machine Learning Research Intern @ Brookhaven National Lab</p>
+                <p>+ Computer Vision Lab Research Assistant @ Stevens Institute of Technology</p>
               </div>
             </div>
           </div>
@@ -87,10 +103,10 @@ export function AboutSection() {
               </CardHeader>
               <CardContent className="space-y-4 text-[0.97rem] text-foreground/95">
                 <p>
-                  I am a 2nd-year undergraduate studying computer science and mathematics at Stevens Institute of Technology.
+                  I am a 3rd-year undergraduate studying computer science and mathematics at Stevens Institute of Technology.
                 </p>
                 <p>
-                  I work as a research assistant within the Computer Vision lab at Stevens, and as a machine learning research intern in the Computational Data Science group at Brookhaven National Laboratory.
+                  I work as a research assistant within the Computer Vision lab at Stevens, and as a machine learning research intern in the Computational and Data Science group at Brookhaven National Lab.
                 </p>
                 <p>
                   My current projects focus on developing an expressive and uncertainity-aware framework for uncertainity quantification on spatiotemporal predictions made by neural field models. I am also interested in applying UQ methods to robotics and autonomous systems.

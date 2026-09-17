@@ -2,6 +2,27 @@
 
 const newsItems = [
   {
+    date: "September 2026",
+    content: (
+      <>
+        Sponsored to attend{" "}<a href="https://shpe.org/engage/events/national-convention/" className="italic text-orange-600 hover:text-orange-300">
+  SHPE (Society of Hispanic Professional Engineers) National Convention 2026
+        </a>{" "}
+        in Indianapolis, Indiana.
+      </>
+    ),
+  },
+  {
+    date: "September 2026",
+    content: (
+      <>
+        Reappointed as a Lead for the Fall 2026 semester of{" "}<a href="https://www.stevens.edu/school-engineering-science/departments/mathematical-sciences/math-circle-initiative" className="italic text-orange-600 hover:text-orange-300">
+  Stevens Math Circle Initiative
+        </a>{" "}
+      </>
+    ),
+  },
+  {
     date: "March 2026",
     content: (
       <>
@@ -14,22 +35,41 @@ const newsItems = [
     ),
   },
   {
-    date: "January 2026",
+    date: "February 2026",
     content: (
       <>
-        I started my research assistantship within the Computer Vision lab at Stevens Institute of Technology.
+        Received return offer from Computational and Data Science group at Brookhaven National Laboratory.
       </>
     ),
   },
   {
-    date: "February 2026",
+    date: "January 2026",
+    content: (
+      <>
+        Appointed as a Lead for the Spring 2026 semester of{" "}<a href="https://www.stevens.edu/school-engineering-science/departments/mathematical-sciences/math-circle-initiative" className="italic text-orange-600 hover:text-orange-300">
+  Stevens Math Circle Initiative,
+        </a>{" "}
+        an NSF-funded and university-student-led math enrichment program for elementary and middle school students.
+      </>
+    ),
+  },
+  {
+    date: "January 2026",
+    content: (
+      <>
+        Started my research assistantship within the Computer Vision lab at Stevens Institute of Technology.
+      </>
+    ),
+  },
+  {
+    date: "October 2025",
     content: <>Attended HackPrinceton 2025.</>,
   },
   {
     date: "March 2025",
     content: (
       <>
-        Won my first hackathon! Made
+        Won my first hackathon! Built
         <a
           href="https://devpost.com/software/pelican-ai?ref_content=user-portfolio&ref_feature=in_progress"
           className="italic text-orange-600 hover:text-orange-300"
@@ -61,7 +101,7 @@ const newsItems = [
     date: "February 2025",
     content: (
       <>
-        I accepted an offer from{" "}
+        Accepted an offer from{" "}
         <a
           href="https://www.bnl.gov/world/"
           className="italic text-orange-600 hover:text-orange-300"
@@ -83,14 +123,14 @@ const newsItems = [
     date: "February 2025",
     content: (
       <>
-        I attended Hack@Brown at Brown University. Here, my friends and I built{" "}
+        Attended Hack@Brown at Brown University. Here, my friends and I built{" "}
         <a className="italic text-orange-600 hover:text-orange-300">Upright</a>, a posture analysis tool.
       </>
     ),
   },
   {
     date: "January 2025",
-    content: "I accepted my offer as a Resident Assistant at Stevens Institute of Technology.",
+    content: "Accepted my offer as a Resident Assistant at Stevens Institute of Technology.",
   },
 ]
 
